@@ -1,0 +1,44 @@
+.container
+{
+    width: 920px;
+    margin: 0 auto;
+}
+
+#encabezado
+{
+    height: 150px;
+    background-color: firebrick;
+}
+
+#barra-navegacion
+{
+    height: 50px;
+    background-color: darkred;
+}
+
+#nota-principal
+{
+    height: 300px;
+    background-color: forestgreen;
+}
+
+#nota-secundarias
+{
+    width: 700px;
+    float: left;
+    display: inline;
+}
+
+#publicidad
+{
+    width: 220px;
+    float: right;
+}
+
+#pie
+{
+    clear: both;
+}
+img {
+    
+}
