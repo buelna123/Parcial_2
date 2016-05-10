@@ -10,7 +10,9 @@
     <div class="container">
        <header id="encabezado">
        <!-- Imagen con logo sep -->
-       <img id="logo-sep" src="#" alt="logo sep" width="300px" height="88px">
+       <figure>
+       <img id="logo-sep" src="image/logo_sep.png" alt="logo sep">
+       </figure>
        <!--textos con titulos-->
        <div id="titulos">
            <h1>Sitio Oficial del CETis108</h1>
@@ -20,12 +22,29 @@
            <h4>"Gral. Gabriel Leiva Solando" C.C.T. 25DCT0108</h4>
        </div>
        <!--imagenes sems-dgeti y cuadro de busqueda-->
+           <div id="busqueda">
+               <figure>
+                   <img src="image/sems_dgeti.png" alt="Logo Sems DGETI"
+               </figure>
+               <input type="text" name="buscar">
+               <button>Buscar</button>
+           </div>
            </header>
             <nav id="barra-navegacion">
                 <ul>
-                    <li><a href="#">opcion 1</a></li>
-                    <li><a href="#">opcion 2</a></li>
-                    <li><a href="#">opcion 3</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Plantel</a></li>
+                    <li><a href="#">Oferta Educativa</a></li>
+                    <li>
+                        <a href="#">Alumnos</a>
+                        <ul>
+                            <li><a href="#">Calificaciones</a></li>
+                            <li><a href="#">Horarios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Docentes</a></li>
+                    <li><a href="#">Empleados</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
             <section id="contenido">

@@ -6,15 +6,62 @@
 
 #encabezado
 {
-    height: 150px;
-    background-color: firebrick;
+    height: 120px;
+    display: flex;
+    justify-content: space-between
+}
+
+#encabezado figure, #titulos
+{
+    margin: 0;
 }
 
 #barra-navegacion
 {
     height: 50px;
-    background-color: darkred;
+    overflow: hidden;
+    background-color: firebrick;
 }
+
+#barra-navegacion > ul
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#barra-navegacion li
+{
+    display: block
+}
+
+#barra-nagevacion ul
+{
+    padding: 0;
+}
+
+#barra-navegacion a
+{
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+#barra-navegacion ul ul
+{
+    display: none;
+}
+
+#barra-navegacion > ul > li:hover
+{
+    background-color: red;
+}
+
+
+#titulos h1 {font-size: 1.5em;}
+#titulos h2 {font-size: 1.2em;}
+#titulos h3 {font-size: 0.9em;}
+#titulos h4 {font-size: 0.8em;}
+
 
 #nota-principal
 {
@@ -32,6 +79,7 @@
     background-color: orange;
 }
 
+
 #publicidad
 {
     width: 210px;
@@ -48,6 +96,7 @@
     background-color: blue;
 }
 
+/*
 #logo-sep
 {
     margin-top: 31px;
@@ -58,6 +107,7 @@
 {
     margin: 0 auto;    
 }
+
 #titulos
 {
     padding-left: 310px;
@@ -87,3 +137,4 @@ nav a:hover
 {
     background-color: red;
 }
+*/
