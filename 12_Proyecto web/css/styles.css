@@ -4,6 +4,11 @@
     margin: 0 auto;
 }
 
+.text-center
+{
+    text-align: center;
+}
+
 #encabezado
 {
     height: 120px;
@@ -16,6 +21,12 @@
     margin: 0;
 }
 
+#titulos h1 {font-size: 1.5em;}
+#titulos h2 {font-size: 1.2em;}
+#titulos h3 {font-size: 0.9em;}
+#titulos h4 {font-size: 0.8em;}
+
+
 #barra-navegacion
 {
     height: 50px;
@@ -27,13 +38,17 @@
 #barra-navegacion > ul
 {
     padding: 0;
-    display: flex;
 }
 
 #barra-navegacion li
 {
     display: inline-block;
     padding: 0;
+}
+
+.submenu
+{
+    display: none;
 }
 
 #barra-navegacion a
@@ -54,31 +69,46 @@
     background-color: red;
 }
 
-
-#titulos h1 {font-size: 1.5em;}
-#titulos h2 {font-size: 1.2em;}
-#titulos h3 {font-size: 0.9em;}
-#titulos h4 {font-size: 0.8em;}
-
-
 #nota-principal
 {
     border: 10px solid;
     border-color: white;
-    box-shadow: 0 0 10px;
-    margin-top: 10px;
+    box-shadow: 0 0 10px darkgray;
+    margin: 20px 0;
 }
 
 #notas-secundarias
 {
     width: 660px;
     float: left;
-    padding: 20px;
-    display: inline;
-    height: 260px;
+    min-height: 260px;
     background-color: orange;
 }
 
+#notas-secundarias article
+{
+    display: flex;
+}
+
+figure
+{
+    margin: 0;
+}
+
+#notas-secundarias figure
+{
+    position: relative;
+}
+
+#notas-secundarias figure span
+{
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    padding: 5px 20px;
+    background-color: lightgray;
+    box-shadow: 1px 1px 3px darkgrey;
+}
 #publicidad
 {
     width: 210px;
@@ -94,51 +124,3 @@
     height: 150px;
     background-color: blue;
 }
-
-figure
-{
-    margin: 0;
-}
-
-/*
-#logo-sep
-{
-    margin-top: 31px;
-    float: left;
-}
-
-.block-center
-{
-    margin: 0 auto;    
-}
-
-#titulos
-{
-    padding-left: 310px;
-}
-#titulos *
-{
-    margin: 0;
-    padding: 0;
-}
-
-nav li
-{
-    display: inline-block;
-}
-
-nav a
-{
-    display: inline-block;
-    background-color: crimson;
-    padding: 10px;
-    color: white;
-    border: 0;
-    text-decoration: none;
-}
-
-nav a:hover
-{
-    background-color: red;
-}
-*/
