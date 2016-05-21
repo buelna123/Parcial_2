@@ -92,7 +92,7 @@
 
 figure
 {
-    margin: 0;
+    margin: 20px 0;
 }
 
 #notas-secundarias figure
@@ -124,3 +124,4 @@ figure
     height: 150px;
     background-color: blue;
 }
+
