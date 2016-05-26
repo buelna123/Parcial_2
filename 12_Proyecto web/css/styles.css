@@ -1,28 +1,42 @@
+h1,h2,h3,h4,h5,h6,p,figure
+{
+    margin: 0;
+    padding: 0;
+}
+
 .container
 {
     width: 920px;
     margin: 0 auto;
 }
 
-.text-center
+
+#busqueda
 {
-    text-align: center;
+   display: flex;
 }
 
-#encabezado
+#encabezado 
 {
     height: 120px;
     display: flex;
     justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
 }
 
-#encabezado figure, #titulos *
+#encabezado figure
 {
     margin: 0;
 }
 
-#titulos h1 {font-size: 1.5em;}
-#titulos h2 {font-size: 1.2em;}
+#titulos *
+{
+    margin: 0;
+}
+
+#titulos h1 {font-size: 1.2em;}
+#titulos h2 {font-size: 1em;}
 #titulos h3 {font-size: 0.9em;}
 #titulos h4 {font-size: 0.8em;}
 
@@ -32,18 +46,23 @@
     height: 50px;
     display: flex;
     justify-content: center;
-    background-color: firebrick;
+    background-color: lightgray;
 }
 
-#barra-navegacion > ul
+#barra-navegacion ul
 {
     padding: 0;
 }
 
 #barra-navegacion li
 {
-    display: inline-block;
+    list-style-type: none;
     padding: 0;
+}
+
+#barra-navegacion > ul > li
+{
+    display: inline-block;
 }
 
 .submenu
@@ -51,7 +70,7 @@
     display: none;
 }
 
-#barra-navegacion a
+#barra-navegacion li a
 {
     color: black;
     text-decoration: none;
@@ -59,40 +78,55 @@
     transform: 0.5px;
 }
 
-#barra-navegacion ul ul
+
+#barra-navegacion ul > li > a
 {
-    display: none;
+    padding: 10px;
+    background-color: darkgray;
+    transition: 0.5s;
 }
 
 #barra-navegacion > ul > li >a:hover
 {
-    background-color: red;
+    background-color: darkgray;
+}
+
+#barra-navegacion li ul
+{
+    display: none;
 }
 
 #nota-principal
 {
-    border: 10px solid;
-    border-color: white;
-    box-shadow: 0 0 10px darkgray;
-    margin: 20px 0;
+    height: 385px;
+    box-shadow: 0 0 15px darkgray;
+    margin: 20px 0px 20px;
+    border: 10px solid white;
 }
+
 
 #notas-secundarias
 {
-    width: 660px;
+    width: 700px;
     float: left;
     min-height: 260px;
-    background-color: orange;
-}
+    display: inline-block;
+    float: left;
+ }
 
 #notas-secundarias article
 {
     display: flex;
+    background-image: url(fondo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 figure
 {
-    margin: 20px 0;
+    margin: 0 0 20px;
 }
 
 #notas-secundarias figure
@@ -109,6 +143,78 @@ figure
     background-color: lightgray;
     box-shadow: 1px 1px 3px darkgrey;
 }
+
+#notas-secundarias article div
+{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+#notas-secundarias article div p
+{
+    text-align: justify;
+    margin: 10px 0;
+}
+
+#notas-secundarias article h2
+{
+    font-variant: small-caps;
+    line-height: 0.9em;
+    font-size: 1.8em;
+}
+
+#notas-secundarias a
+{
+    color: #b92025;
+    text-decoration: none;
+}
+
+#notas-secundarias a:hover
+{
+    color: #2a6496;
+    text-decoration: underline;
+}
+
+.sombra-imagen
+{
+    box-shadow: 0 0 5px darkgray;
+}
+
+.ver-mas div
+{
+    margin: 0 !important; 
+    padding: 5px !important;
+}
+
+.ver-mas>div
+{
+    width: 100px;
+    padding: 3px;
+    height: 1.5em;
+    background-color: #b92025;
+    display: inline-block;
+}
+
+.ver-mas>div>div
+{
+    padding: 2px 20px;
+    width: 87px;
+    border: 1px solid white;
+    height: 12px;
+}
+
+.ver-mas p
+{
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+article
+{
+    display: flex;
+}
+
 #publicidad
 {
     width: 210px;
@@ -116,6 +222,7 @@ figure
     padding: 5px;
     background-color: yellow;
     height: 290px;
+    display: inline-block;
 }
 
 #pie
@@ -124,4 +231,5 @@ figure
     height: 150px;
     background-color: blue;
 }
+
 
